@@ -1,7 +1,7 @@
 # Greenland_bare_ice_albedo
 
-+ These tools have been developed using a conda virtual environment that can be identically recreated. To this end, create a new      
-  environment using [PROMICE.yml](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE.yml) as below:
++ These tools have been developed using a conda virtual environment that can be identically recreated. To this end, 
+create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE.yml) as below:  
   ```bash
   conda env create -f PROMICE.yml
   ```
@@ -24,7 +24,7 @@
   #process ice ablation and albedo time series around the onset of bare ice conditions 
   ds_proc=ppt.BIC_processing(ds, visualisation=True)
 
-  #compute multi-year and multi-site composites for air temperature, snow height, ice ablation and albedo time series
-  #centered on bare ice appearance and spanning ± dt days
+  #compute multi-year and multi-site composites for air temperature, snow height, ice ablation and albedo 
+  #time series centered on bare ice appearance and spanning ± dt days
   composite=ppt.BIC_composite('path/to/dataset/folder/', dt=45)
   ```
