@@ -5,7 +5,7 @@
 
 This code contains 3 functions:
     
-    -load_data(): Load a PROMICE station dataset including all years or selected one(s)
+    -load_data(): Load a PROMICE station dataset including all years or selected one(s).
     -BIC_processing(): Processing, filtering and exclusion of ice ablation and albedo timeseries 
                        spanning the onset of bare ice conditions.
     -BIC_composite(): Multi-year and multi-site composites of air temperature, snow height,
