@@ -6,7 +6,7 @@ create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Gre
   conda env create -f PROMICE.yml
   ```
 
-+ The repository can also be run interactively on Binder, without any download:
++ The repository can also be run interactively on Binder using [PROMICE_processing_tools.ipynb](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE_processing_tools.ipynb), without any download:
 
   [<img src="https://mybinder.org/badge_logo.svg">](https://mybinder.org/v2/gh/AdrienWehrle/Greenland_bare_ice_albedo/master)
 
