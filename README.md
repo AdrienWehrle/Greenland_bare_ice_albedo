@@ -8,8 +8,8 @@ create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Gre
 
 + The repository can also be run interactively on Binder, without any download:
 
-  ![https://mybinder.org/v2/gh/AdrienWehrle/Greenland_bare_ice_albedo/master](https://mybinder.org/badge_logo.svg)
-  
+  [<img src="https://mybinder.org/badge_logo.svg">](https://mybinder.org/v2/gh/AdrienWehrle/Greenland_bare_ice_albedo/master)
+
  
 + The three functions presented in [PROMICE_processing_tools.py](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE_processing_tools.py) can be used as follows:
 
