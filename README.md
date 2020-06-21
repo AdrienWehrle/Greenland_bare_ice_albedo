@@ -1,4 +1,4 @@
-# Greenland_bare_ice_albedo
+# Greenland bare ice albedo
 
 + These tools have been developed using a conda virtual environment that can be identically recreated. To this end, 
 create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE.yml) as below:  
