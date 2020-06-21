@@ -1,6 +1,6 @@
 """
 
-@author: Adrien Wehrlé, Jason E. Box, GEUS (Geological Survey of Denmark and Greenland)
+@author: Adrien WehrlÃ©, Jason E. Box, GEUS (Geological Survey of Denmark and Greenland)
 
 
 This code contains 3 functions:
@@ -14,7 +14,6 @@ This code contains 3 functions:
 
 """
 
-
 import os
 import glob
 import pandas as pd
@@ -25,7 +24,6 @@ from collections import Counter
 import pickle
 
     
-
 
 def load_data(file, year):
     
@@ -73,8 +71,7 @@ def load_data(file, year):
     return promice_data
 
 
-
-    
+   
 def BIC_processing(promice_data, fig_save=False, fig_path=None, visualisation=False):
     
     '''
@@ -674,7 +671,7 @@ def BIC_processing(promice_data, fig_save=False, fig_path=None, visualisation=Fa
         
         ax4=plt.subplot(414, sharex=ax1)
         ax4.plot(df_y_init["DayOfYear"],df_y_init['AirTemperature(C)'],'ro-')
-        ax4.set_ylabel('Air temperature (°C)',fontsize=fs,color='red')
+        ax4.set_ylabel('Air temperature (Â°C)',fontsize=fs,color='red')
         ax4.set_xlabel('Day of year (DOY)',fontsize=fs)
         ax4.axhline(0,color='gray',LineStyle='--')
         plt.suptitle('%s %s' %(site,y),fontsize=fs+6)
@@ -773,13 +770,12 @@ def BIC_processing(promice_data, fig_save=False, fig_path=None, visualisation=Fa
 
 
 
-
 def BIC_composite(inpath, dt=45,verbose=True, visualisation=True, save_pkl=False):
     
     '''
     
     Composites of air temperature, snow height, ice ablation and albedo time series 
-    centered on bare ice appearance and spanning ± dt days. 
+    centered on bare ice appearance and spanning Â± dt days. 
     
     
     INPUTS:
@@ -794,7 +790,7 @@ def BIC_composite(inpath, dt=45,verbose=True, visualisation=True, save_pkl=False
     OUTPUTS:
         composite: Dictionnary containing air_temperature_degrees, ice_ablation_meters,
                    snow_height_meters, albedo_unitless keys and associated dataframes
-                   of station years (per row) spanning BID±dt (along columns). [dictionnary]
+                   of station years (per row) spanning BIDÂ±dt (along columns). [dictionnary]
                      
     '''
     
@@ -814,7 +810,7 @@ def BIC_composite(inpath, dt=45,verbose=True, visualisation=True, save_pkl=False
                'snow_height_meters':'Height_sensor_boom_m',
                'albedo_unitless':'Albedo_theta_inf_70d'} 
     
-    #compute timespan associated with ±dt
+    #compute timespan associated with Â±dt
     time_span=2*dt+1
     
     
@@ -892,7 +888,7 @@ def BIC_composite(inpath, dt=45,verbose=True, visualisation=True, save_pkl=False
                 if var_names[i]=='albedo_unitless':
                     
                     plt.hlines(np.nanmean(var,axis=0)[dt],LineStyle='--',color='red',xmin=xlims[0],xmax=dt,
-                           label='%.3f±%.3f' %(np.nanmean(var,axis=0)[dt],np.nanstd(var,axis=0)[dt]),zorder=3)
+                           label='%.3fÂ±%.3f' %(np.nanmean(var,axis=0)[dt],np.nanstd(var,axis=0)[dt]),zorder=3)
                     plt.ylabel('%s, %s' %(var_names[i].split('_')[0],var_names[i].split('_')[1]),fontsize=fs)
                     plt.legend(fontsize=fs-5, loc='upper right')
                     plt.vlines(dt,ymin=ylims[0],ymax=np.nanmean(var,axis=0)[dt],LineStyle='--',color='black',zorder=3)
