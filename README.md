@@ -1,0 +1,1 @@
+# Greenland_bare_ice_albedo
