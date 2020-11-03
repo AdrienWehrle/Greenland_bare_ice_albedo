@@ -15,16 +15,16 @@ create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Gre
 
   ```python
   import sys
-  sys.path.append(path/to/module/)
   import PROMICE_processing_tools as ppt
+  sys.path.append(path/to/module/)
 
-  #load PROMICE dataset for a given station, all available years
-  ds=ppt.load_data(file='path/to/dataset.txt', year='all')
+  # load PROMICE dataset for a given station, all available years
+  ds = ppt.load_data(file='path/to/dataset.txt', year='all')
 
-  #process ice ablation and albedo time series around the onset of bare ice conditions 
-  ds_proc=ppt.BIC_processing(ds, visualisation=True)
+  # process ice ablation and albedo time series around the onset of bare ice conditions 
+  ds_proc = ppt.BIC_processing(ds, visualisation=True)
 
-  #compute multi-year and multi-site composites for air temperature, snow height, ice ablation and albedo 
-  #time series centered on bare ice appearance and spanning ± dt days
-  composite=ppt.BIC_composite('path/to/dataset/folder/', dt=45)
+  # compute multi-year and multi-site composites for air temperature, snow height, ice ablation  
+  # and albedo time series centered on bare ice appearance and spanning ± dt days
+  composite = ppt.BIC_composite('path/to/dataset/folder/', dt=45)
   ```
