@@ -1,5 +1,7 @@
 # Greenland bare ice albedo
 
+[![DOI](https://zenodo.org/badge/273865759.svg)](https://zenodo.org/badge/latestdoi/273865759)
+
 + These tools have been developed using a conda virtual environment that can be identically recreated. To this end, 
 create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Greenland_bare_ice_albedo/blob/master/PROMICE.yml) as below:  
   ```bash
