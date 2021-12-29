@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/273865759.svg)](https://zenodo.org/badge/latestdoi/273865759)
 # Greenland bare ice albedo
 
-Post-processing tools for a dataset of PROMICE daily ice-ablation, albedo, snow height and temperature measurements (225 station years from 26 stations, 2007-2019) including corrections for signal shifts caused by station movement, sensor reinstallation and measurement failure. Using the resulting processed ice-ablation measurements in combination with seasonal snow layer thickness and air temperature, the seasonal timing of bare-ice onset is then determined for each station year. The albedo value at the timing of bare-ice onset is finally extracted to compute an average Greenland bare-ice albedo at ice-ablation onset (called bare-ice-onset albedo; [Wehrlé et al, 2021](https://geusbulletin.org/index.php/geusb/article/view/5284)). Accurate definition of this variable has applications in classifying the bare-ice area over large areas of the ice sheet, in constraining polar regional climate models used to estimate the surface mass balance of the Greenland ice sheet and in climate monitoring.
+Post-processing tools for a dataset of [PROMICE](https://promice.dk/) daily ice-ablation, albedo, snow height and temperature measurements (225 station years from 26 stations, 2007-2019) including corrections for signal shifts caused by station movement, sensor reinstallation and measurement failure. Using the resulting processed ice-ablation measurements in combination with seasonal snow layer thickness and air temperature, the seasonal timing of bare-ice onset is then determined for each station year. The albedo value at the timing of bare-ice onset is finally extracted to compute an average Greenland bare-ice albedo at ice-ablation onset (called bare-ice-onset albedo; [Wehrlé et al, 2021](https://geusbulletin.org/index.php/geusb/article/view/5284)). Accurate definition of this variable has applications in classifying the bare-ice area over large areas of the ice sheet, in constraining polar regional climate models used to estimate the surface mass balance of the Greenland ice sheet and in climate monitoring.
 
 ![](https://geusbulletin.org/index.php/geusb/article/download/5284/12394/41081)
 
@@ -35,3 +35,12 @@ create a new environment using [PROMICE.yml](https://github.com/AdrienWehrle/Gre
   # and albedo time series centered on bare ice appearance and spanning ± dt days
   composite = ppt.BIC_composite('path/to/dataset/folder/', dt=45)
   ```
+ + Figure 1 (Figure 2 of [Wehrlé et al, 2021](https://geusbulletin.org/index.php/geusb/article/view/5284)) can be reproduced identically by running the last command presented above with a PROMICE data set lastly updated on 2019-08-02.
+
+# PROMICE data
+
+PROMICE data sets can be downloaded [here](https://promice.org/PromiceDataPortal/api/download/f24019f7-d586-4465-8181-d4965421e6eb) at any time.
+
+# Reference
+  
+Wehrlé, A., Box, J. E., Niwano, M., Anesio, A. M., & Fausto, R. S. (2021). Greenland bare-ice albedo from PROMICE automatic weather station measurements and Sentinel-3 satellite observations. GEUS Bulletin, 47. https://doi.org/10.34194/geusb.v47.5284
