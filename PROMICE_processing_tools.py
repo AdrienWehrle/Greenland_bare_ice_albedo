@@ -1,16 +1,6 @@
 """
 
-@author: Adrien Wehrlé, Jason E. Box, GEUS (Geological Survey of Denmark and Greenland)
-
-
-This code contains 3 functions:
-    
-    -load_data(): Load a PROMICE station dataset including all years or selected one(s).
-    -BIC_processing(): Processing, filtering and exclusion of ice ablation and albedo timeseries 
-                       spanning the onset of bare ice conditions.
-    -BIC_composite(): Multi-year and multi-site composites of air temperature, snow height,
-                      ice ablation and albedo time series centered on bare ice appearance using
-                      the two first functions. 
+@author: Adrien Wehrlé, Jason E. Box, GEUS (Geological Survey of Denmark and Greenland), 2019
 
 """
 
@@ -1154,7 +1144,7 @@ def BIC_composite(inpath, dt=45, verbose=True, visualisation=True, save_pkl=Fals
     sites = []
 
     for f in files:
-        site = f.split(os.sep)[1].split("_")[0] + "_" + f.split(os.sep)[1].split("_")[1]
+        site = f.split(os.sep)[-1].split("_")[0] + "_" + f.split(os.sep)[-1].split("_")[1]
         if site[:3] == "MIT" or site[:3] == "CEN" or site[:3] == "EGP":
             site = site.split("_")[0]
         sites.append(site)
